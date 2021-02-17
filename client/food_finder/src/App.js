@@ -1,10 +1,10 @@
-import React from 'react';
 import './App.css';
-import MainContainer from './containers/MainContainer'
 
 function App() {
   return (
-    <MainContainer />
+    <>
+    <h1>This is the food finder app</h1>
+    </>
   );
 }
 
