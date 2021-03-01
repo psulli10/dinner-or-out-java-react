@@ -1,4 +1,4 @@
-# JavaReactFoodFinderProject
+# Din or Out
 Full stack application built using Java for back end and React for front end... 
 
 Application helps the user find either a recipe or restaurant to feed them for that day. 
