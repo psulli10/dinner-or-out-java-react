@@ -4,10 +4,10 @@ import Header from "../components/Header";
 const SignUp = () => {
     return (
         <>
-        <h1>SignUp</h1>
-        <Header text='Please fill out your information'/>
+        <h1>SignIn</h1>
+        <Header text='Sign in please...'/>
         <Button link='/' action='Cancel'/>
-        <Button link='/in-out' action='Sign Up (form input required)'/>
+        <Button link='/in-out' action='Sign In (form input required)'/>
     </>
     )
 }
