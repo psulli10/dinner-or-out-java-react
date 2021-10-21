@@ -4,6 +4,7 @@ import SignUp from "./containers/SignUp";
 import SignIn from "./containers/SignIn";
 import InOut from "./containers/InOut";
 import In from "./containers/In";
+import Out from "./containers/Out";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/sign-in" render={() => <SignIn />} />
         <Route exact path="/in-out" render={() => <InOut />} />
         <Route exact path="/in" render={() => <In />} />
+        <Route exact path="/out" render={() => <Out />} />
       </>
     </Router>
   );
