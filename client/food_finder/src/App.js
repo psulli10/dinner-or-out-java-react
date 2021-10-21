@@ -1,21 +1,27 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Splash from "./containers/Splash";
 import SignUp from "./containers/SignUp";
 import SignIn from "./containers/SignIn";
 import InOut from "./containers/InOut";
 import In from "./containers/In";
 import Out from "./containers/Out";
+import InMeal from "./containers/InMeal";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
     <Router>
       <>
-        <Route exact path="/" render={() => <Splash />} />
-        <Route exact path="/sign-up" render={() => <SignUp />} />
-        <Route exact path="/sign-in" render={() => <SignIn />} />
-        <Route exact path="/in-out" render={() => <InOut />} />
-        <Route exact path="/in" render={() => <In />} />
-        <Route exact path="/out" render={() => <Out />} />
+        <Switch>
+          <Route exact path="/" render={() => <Splash />} />
+          <Route path="/sign-up" render={() => <SignUp />} />
+          <Route path="/sign-in" render={() => <SignIn />} />
+          <Route path="/in-out" render={() => <InOut />} />
+          <Route exact path="/in" render={() => <In />} />
+          <Route path="/out" render={() => <Out />} />
+          <Route path="/in/:meal" render={() => <InMeal />} />
+          <Route component={ErrorPage}/>
+        </Switch>
       </>
     </Router>
   );
