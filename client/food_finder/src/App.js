@@ -26,7 +26,7 @@ function App() {
           <Route path="/out/:restaurant" render={() => <OutRestaurant />} />
           <Route component={ErrorPage}/>
         </Switch>
-      </>
+      </> 
     </Router>
   );
 }
