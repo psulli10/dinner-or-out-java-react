@@ -2,19 +2,19 @@ import Header from "../components/Header";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../components/Button";
 
-const InMeal = () => {
+const OutRestaurant = () => {
 
-    const {meal} = useParams()
-    const text = `Mmmm ${meal} looks lovely!`
+    const {restaurant} = useParams()
+    const text = `Mmmm ${restaurant} looks great!`
 
     return (
         <>
-        <h1>InMeal</h1>
+        <h1>OutRestaurant</h1>
         <Header text={text}/>
-        <Button link='/in' action='Back'/>
+        <Button link='/out' action='Back'/>
         <Button link='/' action='Add to favourites'/>
     </>
     )
 }
 
-export default InMeal;
+export default OutRestaurant;
